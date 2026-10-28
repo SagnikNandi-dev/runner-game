@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temple Dash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game" width="480" height="720"></canvas>
+    <div id="hud"><span id="score">Score 0</span><span id="coinbox"><i class="coin"></i><b id="coins">0</b></span></div>
+    <div id="pw"></div>
+    <div id="abwrap"><div id="abbar" class="ready"><div id="abtxt"><b>READY</b><small>press F</small></div></div><div id="ablabel"></div></div>
+    <div id="btns"><button id="ab" title="Special ability (F)">✦</button><button id="pause" title="Pause (P)">❚❚</button><button id="mute" title="Mute (M)">♪</button></div>
+    <div id="overlay">
+      <h1>Temple Dash</h1>
+      <p id="msg">Escape the ruins. Don't stop running.</p>
+      <div id="stats" hidden></div>
+      <p class="keys">← → lane &nbsp; ↑ / Space jump &nbsp; ↓ slide<br>P pause &nbsp; R restart &nbsp; M mute &nbsp; F ability</p>
+      <p id="pick">Choose your runner</p>
+      <div id="chars">
+        <button class="char sel" data-c="sagnik" aria-label="Sagnik, Male, Helicopter 4s"><canvas width="72" height="112"></canvas><span>Sagnik</span><small>Male</small><em>Helicopter 4s</em></button>
+        <button class="char" data-c="aniruddha" aria-label="Aniruddha, Male, Bird ride 4s"><canvas width="72" height="112"></canvas><span>Aniruddha</span><small>Male</small><em>Bird ride 4s</em></button>
+        <button class="char" data-c="prasun" aria-label="Prasun, Male, Lungi glide 20s"><canvas width="72" height="112"></canvas><span>Prasun</span><small>Male</small><em>Lungi glide 20s</em></button>
+        <button class="char" data-c="tuya" aria-label="Tuya, Female, Fairy wings 6s"><canvas width="72" height="112"></canvas><span>Tuya</span><small>Female</small><em>Fairy wings 6s</em></button>
+      </div>
+      <button id="start">Run</button>
+      <button id="restart" hidden>Restart</button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
